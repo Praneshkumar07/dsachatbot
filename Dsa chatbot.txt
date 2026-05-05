@@ -1,0 +1,43 @@
+### TOPIC: Introduction to DSA
+Instruction: What is the difference between a Data Structure and an Algorithm?
+Response: A Data Structure is a specialized format for organizing, processing, retrieving, and storing data (e.g., Arrays, Linked Lists). An Algorithm is a step-by-step procedure or a set of rules to be followed in calculations or other problem-solving operations (e.g., Sorting, Searching).
+
+### TOPIC: Time & Space Complexity
+Instruction: Explain Big O Notation simply.
+Response: Big O notation describes the upper bound of an algorithm's running time or memory usage as the input size (n) grows. It focuses on the worst-case scenario. Common complexities include O(1) (Constant), O(log n) (Logarithmic), O(n) (Linear), and O(n^2) (Quadratic).
+
+### TOPIC: Arrays & Strings
+Instruction: When should I use an Array over a Linked List?
+Response: Use an Array when you need fast "Random Access" to elements using an index (O(1) time). Arrays are also more memory-efficient due to contiguous storage. However, if you need frequent insertions and deletions at the beginning or middle, a Linked List is better.
+
+### TOPIC: Linked Lists
+Instruction: How do you detect a cycle in a Linked List?
+Response: The most efficient way is "Floyd’s Cycle-Finding Algorithm" (also known as the Tortoise and Hare algorithm). You use two pointers: a slow pointer that moves one step at a time and a fast pointer that moves two steps. If they ever meet, a cycle exists.
+
+### TOPIC: Stacks & Queues
+Instruction: What are the real-world applications of a Stack?
+Response: Stacks follow the Last-In-First-Out (LIFO) principle. Applications include: 1. Undo/Redo operations in text editors. 2. Expression evaluation (Infix to Postfix). 3. Function call management in recursion (the Call Stack). 4. Backtracking algorithms.
+
+### TOPIC: Trees
+Instruction: What is a Binary Search Tree (BST)?
+Response: A BST is a binary tree where for every node: 1. The left subtree contains only nodes with keys less than the node’s key. 2. The right subtree contains only nodes with keys greater than the node’s key. This allow for O(log n) search, insertion, and deletion on average.
+
+### TOPIC: Heaps & Priority Queues
+Instruction: What is the difference between a Min-Heap and a Max-Heap?
+Response: In a Min-Heap, the root node is the smallest element, and every parent node is smaller than its children. In a Max-Heap, the root is the largest element, and every parent is larger than its children. They are commonly used to implement Priority Queues.
+
+### TOPIC: Graphs
+Instruction: When should I use BFS vs DFS?
+Response: Use Breadth-First Search (BFS) to find the shortest path in an unweighted graph or to explore neighbors level-by-level. Use Depth-First Search (DFS) for pathfinding, detecting cycles, or exploring a branch as deep as possible (e.g., solving a maze).
+
+### TOPIC: Sorting Algorithms
+Instruction: Compare Merge Sort and Quick Sort.
+Response: Merge Sort is a stable, divide-and-conquer algorithm with a guaranteed O(n log n) time complexity but requires O(n) extra space. Quick Sort is often faster in practice and uses O(1) extra space (in-place), but its worst-case complexity is O(n^2) if the pivot is poorly chosen.
+
+### TOPIC: Dynamic Programming (DP)
+Instruction: What is the difference between Memoization and Tabulation?
+Response: Both are techniques to solve DP problems. Memoization is a "Top-Down" approach that uses recursion and stores results in a cache. Tabulation is a "Bottom-Up" approach that uses iteration and fills a table (usually an array) from the smallest subproblems up to the main goal.
+
+### TOPIC: Bit Manipulation
+Instruction: How do you check if a number is a power of 2 using bits?
+Response: A number 'n' is a power of 2 if `(n > 0) && (n & (n - 1) == 0)`. This works because a power of two has only one bit set (e.g., 8 is 1000), and subtracting 1 flips all bits after that bit (e.g., 7 is 0111).
