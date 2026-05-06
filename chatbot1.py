@@ -21,7 +21,7 @@ SYSTEM_PROMPT = f"""you are a dsa teacher your job is to clear doubts on dsa, yo
 # ── Gemini client ─────────────────────────────────────────────────────────────
 @st.cache_resource
 def get_client():
-    return genai.Client(api_key="AIzaSyDymw04y6EiYYzCD3KaXnQ9rVtt-Sh7trc")   # <-- paste your API key here
+    return genai.Client(api_key="AIzaSyAhaFFgBlp7cnTb2mV7iU3uZHUCUfTbTsk")   # <-- paste your API key here
 
 client = get_client()
 
